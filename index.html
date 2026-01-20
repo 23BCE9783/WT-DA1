@@ -1,423 +1,415 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 
-	<html>
+<html>
 
-	<head>
+<head>
+
+	<style>
+		.th {
+			background-color: #FFFFCC;
+		}
+
+		.lb {
+			background-color: #F9EFA4;
+		}
+
+		.slot {
+			background-color: #CCFF33;
+		}
+
+		.st,
+		.ln {
+			background-color: #E2E2E2;
+		}
+
+		.one {
+			background-color: #CCCCFF;
+		}
+
+		.two {
+			background-color: #99CCFF;
+		}
+
+		td {
+			border: 1px solid #3c8dbc;
+			padding: 3px;
+			text-align: center;
+			min-width: 50px;
+		}
 
 
-		<style>
-			td {
-				border: 1px solid #3c8dbc;
-				padding: 3px;
-				text-align: center;
-				width: 560px;
-			}
+		table {
+			border-collapse: collapse;
+			border: 2px solid #3c8dbc;
+		}
+	</style>
+</head>
 
-			#slot {
-				background-color: #CCFF33;
-				text-align: center;
-			}
+<body>
 
-			#th {
-				background-color: #FFFFCC;
-				text-align: center;
-			}
+	<table>
+		<tr>
+			<td rowspan="2" class="st">THEORY</td>
+			<td class="st">Start</td>
+			<td class="one">08:00</td>
+			<td class="one">09:00</td>
+			<td class="one">09:01</td>
+			<td class="one">10:00</td>
+			<td class="one">10:01</td>
+			<td class="one">11:00</td>
+			<td class="one">11:01</td>
+			<td class="one">12:00</td>
+			<td class="one">12:01</td>
+			<td class="one">13:00</td>
+			<td class="one">Lunch</td>
+			<td class="one">14:00</td>
+			<td class="one">14:01</td>
+			<td class="one">15:00</td>
+			<td class="one">15:01</td>
+			<td class="one">16:00</td>
+			<td class="one">16:01</td>
+			<td class="one">17:00</td>
+			<td class="one">17:01</td>
+			<td class="one">18:00</td>
+			<td class="one">19:00</td>
+		</tr>
 
-			#lb {
-				background-color: #F9EFA4;
-				text-align: center;
-			}
+		<tr>
+			<td class="st">End</td>
+			<td class="one">08:50</td>
+			<td class="one">09:50</td>
+			<td class="one">09:51</td>
+			<td class="one">10:50</td>
+			<td class="one">10:51</td>
+			<td class="one">11:50</td>
+			<td class="one">11:51</td>
+			<td class="one">12:50</td>
+			<td class="one">12:51</td>
+			<td class="one">13:50</td>
+			<td class="one">Lunch</td>
+			<td class="one">14:50</td>
+			<td class="one">14:51</td>
+			<td class="one">15:50</td>
+			<td class="one">15:51</td>
+			<td class="one">16:50</td>
+			<td class="one">16:51</td>
+			<td class="one">17:50</td>
+			<td class="one">17:51</td>
+			<td class="one">18:50</td>
+			<td class="one">19:30</td>
+		</tr>
 
-			#st {
-				background-color: #E2E2E2;
-				text-align: center;
-			}
 
-			#ln {
-				background-color: #E2E2E2;
-				text-align: center;
-			}
+		<tr>
+			<td rowspan="2" class="st">LAB</td>
+			<td class="st">Start</td>
+			<td class="two">08:00</td>
+			<td class="two">09:00</td>
+			<td class="two">09:01</td>
+			<td class="two">09:50</td>
+			<td class="two">09:51</td>
+			<td class="two">11:00</td>
+			<td class="two">11:01</td>
+			<td class="two">11:50</td>
+			<td class="two">11:51</td>
+			<td class="two">12:40</td>
+			<td class="two">Lunch</td>
+			<td class="two">14:00</td>
+			<td class="two">14:01</td>
+			<td class="two">14:50</td>
+			<td class="two">14:51</td>
+			<td class="two">16:00</td>
+			<td class="two">16:01</td>
+			<td class="two">16:50</td>
+			<td class="two">16:51</td>
+			<td class="two">18:00</td>
+			<td class="two">18:50</td>
+		</tr>
 
-			#one {
-				background-color: #CCCCFF;
-				text-align: center;
-			}
-			
-			#two {
-				background-color: #99CCFF;
-				text-align: center;
-			}
+		<tr>
+			<td class="st">End</td>
+			<td class="two">08:50</td>
+			<td class="two">09:50</td>
+			<td class="two">09:51</td>
+			<td class="two">10:40</td>
+			<td class="two">10:41</td>
+			<td class="two">11:50</td>
+			<td class="two">11:51</td>
+			<td class="two">12:40</td>
+			<td class="two">12:41</td>
+			<td class="two">13:30</td>
+			<td class="two">Lunch</td>
+			<td class="two">14:50</td>
+			<td class="two">14:51</td>
+			<td class="two">15:40</td>
+			<td class="two">15:41</td>
+			<td class="two">16:50</td>
+			<td class="two">16:51</td>
+			<td class="two">17:40</td>
+			<td class="two">17:41</td>
+			<td class="two">18:50</td>
+			<td class="two">19:30</td>
+		</tr>
 
-			table {
-				border-collapse: collapse;
-			}
-		</style>
-	</head>
 
-	<body>
+		<tr>
+			<td rowspan="2" class="st">TUE</td>
+			<td class="st">THEORY</td>
+			<td class="th">TFF1</td>
+			<td class="th">A1</td>
+			<td class="th">-</td>
+			<td class="th">B1</td>
+			<td class="th">-</td>
+			<td class="slot">TC1-CSE4004-ETH-510-CB-ALL</td>
+			<td class="th">G1</td>
+			<td class="th">D1</td>
+			<td class="th">-</td>
+			<td class="th">-</td>
+			<td class="ln">Lunch</td>
+			<td class="slot">F2-CSE3008-ETH-113-CB-ALL</td>
+			<td class="th">-</td>
+			<td class="slot">A2-CSE1008-TH-315-CB-ALL</td>
+			<td class="th">-</td>
+			<td class="th">B2</td>
+			<td class="th">-</td>
+			<td class="th">TC2</td>
+			<td class="th">G2</td>
+			<td class="th">TDD2</td>
+			<td class="th">-</td>
+		</tr>
 
-		<table>
-			<tr>
-				<td rowspan="2" id="st">THEORY</td>
-				<td id="st">Start</td>
-				<td id="one">8:00</td>
-				<td id="one">9:00</td>
-				<td id="one">9:01</td>
-				<td id="one">10:00</td>
-				<td id="one">10:01</td>
-				<td id="one">11:00</td>
-				<td id="one">11:01</td>
-				<td id="one">12:00</td>
-				<td id="one">12:01</td>
-				<td id="one">13:00</td>
-				<td id="one">Lunch</td>
-				<td id="one">14:00</td>
-				<td id="one">14:01</td>
-				<td id="one">15:00</td>
-				<td id="one">15:01</td>
-				<td id="one">16:00</td>
-				<td id="one">16:01</td>
-				<td id="one">17:00</td>
-				<td id="one">17:01</td>
-				<td id="one">18:00</td>
-				<td id="one">19:00</td>
-			</tr>
+		<tr>
 
-			<tr>
+			<td class="st">LAB</td>
+			<td class="lb">L1</td>
+			<td class="slot">L2-CSE3006-ELA-405-CB-ALL</td>
+			<td class="lb">--</td>
+			<td class="slot">L3-CSE3006-ELA-405-CB-ALL</td>
+			<td class="lb">--</td>
+			<td class="lb">L4</td>
+			<td class="lb">--</td>
+			<td class="lb">L5</td>
+			<td class="lb">--</td>
+			<td class="lb">L6</td>
+			<td class="ln">Lunch</td>
+			<td class="lb">L31</td>
+			<td class="lb">--</td>
+			<td class="lb">L32</td>
+			<td class="lb">--</td>
+			<td class="slot">L33-CSE4004-ELA-502B-CB-ALL</td>
+			<td class="lb">--</td>
+			<td class="slot">L34-CSE4004-ELA-502B-CB-ALL</td>
+			<td class="lb">--</td>
+			<td class="lb">L35</td>
+			<td class="lb">L36</td>
+		</tr>
 
-				<td id="st">End</td>
-				<td id="one">8:00</td>
-				<td id="one">9:00</td>
-				<td id="one">9:01</td>
-				<td id="one">10:00</td>
-				<td id="one">10:01</td>
-				<td id="one">11:00</td>
-				<td id="one">11:01</td>
-				<td id="one">12:00</td>
-				<td id="one">12:01</td>
-				<td id="one">13:00</td>
-				<td id="one">Lunch</td>
-				<td id="one">14:00</td>
-				<td id="one">14:01</td>
-				<td id="one">15:00</td>
-				<td id="one">15:01</td>
-				<td id="one">16:00</td>
-				<td id="one">16:01</td>
-				<td id="one">17:00</td>
-				<td id="one">17:01</td>
-				<td id="one">18:00</td>
-				<td id="one">19:00</td>
-			</tr>
+		<tr>
+			<td rowspan="2" class="st">WED</td>
+			<td class="st">THEORY</td>
+			<td class="th">TGG1</td>
+			<td class="th">D1</td>
+			<td class="th">-</td>
+			<td class="slot">F1-STS4006-TH-417-CB-ALL</td>
+			<td class="th">-</td>
+			<td class="slot">E1-CSE3006-ETH-318B-CB-ALL</td>
+			<td class="th">SC2</td>
+			<td class="th">B1</td>
+			<td class="th">-</td>
+			<td class="th">-</td>
+			<td class="ln">Lunch</td>
+			<td class="th">D2</td>
+			<td class="th">-</td>
+			<td class="th">TF2</td>
+			<td class="th">G2</td>
+			<td class="slot">E2-CSE4005-ETH-518-CB-ALL</td>
+			<td class="th">SC1</td>
+			<td class="th">B2</td>
+			<td class="th">-</td>
+			<td class="th">TCC2</td>
+			<td class="th">-</td>
+		</tr>
 
-			<tr>
-				<td rowspan="2" id="st">LAB</td>
-				<td id="st">Start</td>
-				<td id="two">8:00</td>
-				<td id="two">9:00</td>
-				<td id="two">9:01</td>
-				<td id="two">10:00</td>
-				<td id="two">10:01</td>
-				<td id="two">11:00</td>
-				<td id="two">11:01</td>
-				<td id="two">12:00</td>
-				<td id="two">12:01</td>
-				<td id="two">13:00</td>
-				<td id="two">Lunch</td>
-				<td id="two">14:00</td>
-				<td id="two">14:01</td>
-				<td id="two">15:00</td>
-				<td id="two">15:01</td>
-				<td id="two">16:00</td>
-				<td id="two">16:01</td>
-				<td id="two">17:00</td>
-				<td id="two">17:01</td>
-				<td id="two">18:00</td>
-				<td id="two">19:00</td>
-			</tr>
+		<tr>
+			<td class="st">LAB</td>
+			<td class="lb">L7</td>
+			<td class="lb">L8</td>
+			<td class="lb">--</td>
+			<td class="lb">L9</td>
+			<td class="lb">--</td>
+			<td class="lb">L10</td>
+			<td class="lb">--</td>
+			<td class="lb">L11</td>
+			<td class="lb">--</td>
+			<td class="lb">L12</td>
+			<td class="ln">Lunch</td>
+			<td class="slot">L37-CSE3008-ELA-405-CB-ALL</td>
+			<td class="lb">--</td>
+			<td class="slot">L38-CSE3008-ELA-405-CB-ALL</td>
+			<td class="lb">--</td>
+			<td class="lb">L39</td>
+			<td class="lb">--</td>
+			<td class="lb">L40</td>
+			<td class="lb">--</td>
+			<td class="lb">L41</td>
+			<td class="lb">L42</td>
+		</tr>
 
-			<tr>
+		<tr>
+			<td rowspan="2" class="st">THU</td>
+			<td class="st">THEORY</td>
+			<td class="th">TEE1</td>
+			<td class="slot">C1-CSE4004-ETH-510-CB-AL</td>
+			<td class="th">-</td>
+			<td class="th">TD1</td>
+			<td class="th">TG1</td>
+			<td class="th">TAA1</td>
+			<td class="th">ECS</td>
+			<td class="th">TBB1</td>
+			<td class="th">CLUB</td>
+			<td class="th">-</td>
+			<td class="ln">Lunch</td>
+			<td class="slot">TE2-CSE4005-ETH-518-CB-ALL</td>
+			<td class="th">SE1</td>
+			<td class="th">C2</td>
+			<td class="th">-</td>
+			<td class="slot">A2-CSE1008-TH-315-CB-ALL</td>
+			<td class="th">-</td>
+			<td class="th">TD2</td>
+			<td class="th">TG2</td>
+			<td class="th">TGG2</td>
+			<td class="th">-</td>
+		</tr>
 
-				<td id="st">End</td>
-				<td id="two">8:00</td>
-				<td id="two">9:00</td>
-				<td id="two">9:01</td>
-				<td id="two">10:00</td>
-				<td id="two">10:01</td>
-				<td id="two">11:00</td>
-				<td id="two">11:01</td>
-				<td id="two">12:00</td>
-				<td id="two">12:01</td>
-				<td id="two">13:00</td>
-				<td id="two">Lunch</td>
-				<td id="two">14:00</td>
-				<td id="two">14:01</td>
-				<td id="two">15:00</td>
-				<td id="two">15:01</td>
-				<td id="two">16:00</td>
-				<td id="two">16:01</td>
-				<td id="two">17:00</td>
-				<td id="two">17:01</td>
-				<td id="two">18:00</td>
-				<td id="two">19:00</td>
-			</tr>
+		<tr>
+			<td class="st">LAB</td>
+			<td class="lb">L13</td>
+			<td class="lb">L14</td>
+			<td class="lb">--</td>
+			<td class="lb">L15</td>
+			<td class="lb">--</td>
+			<td class="lb">L16</td>
+			<td class="lb">--</td>
+			<td class="lb">L17</td>
+			<td class="lb">--</td>
+			<td class="lb">L18</td>
+			<td class="ln">Lunch</td>
+			<td class="lb">L43</td>
+			<td class="lb">--</td>
+			<td class="lb">L44</td>
+			<td class="lb">--</td>
+			<td class="lb">L45</td>
+			<td class="lb">--</td>
+			<td class="lb">L46</td>
+			<td class="lb">--</td>
+			<td class="lb">L47</td>
+			<td class="lb">L48</td>
+		</tr>
 
-			<tr>
-				<td rowspan="2" id="st">TUE</td>
-				<td id="st">THEORY</td>
-				<td id="th">TFF1</td>
-				<td id="th">A1</td>
-				<td id="th">-</td>
-				<td id="th">B1</td>
-				<td id="th">-</td>
-				<td id="slot">TC1-CSE4004-ETH-510-CB-ALL</td>
-				<td id="th">G1</td>
-				<td id="th">D1</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-				<td id="ln">Lunch</td>
-				<td id="slot">F2-CSE3008-ETH-113-CB-ALL</td>
-				<td id="th">-</td>
-				<td id="slot">A2-CSE1008-TH-315-CB-ALL</td>
-				<td id="th">-</td>
-				<td id="th">B2</td>
-				<td id="th">-</td>
-				<td id="th">TC2</td>
-				<td id="th">G2</td>
-				<td id="th">TDD2</td>
-				<td id="th">-</td>
-			</tr>
+		<tr>
+			<td rowspan="2" class="st">FRI</td>
+			<td class="st">THEORY</td>
+			<td class="th">TCC1</td>
+			<td class="th">TB1</td>
+			<td class="th">-</td>
+			<td class="th">TA1</td>
+			<td class="th">-</td>
+			<td class="slot">F1-STS4006-TH-417-CB-ALL</td>
+			<td class="th">-</td>
+			<td class="slot">TE1-CSE3006-ETH-318B-CB-ALL</td>
+			<td class="th">SD2</td>
+			<td class="th">-</td>
+			<td class="ln">Lunch</td>
+			<td class="th">C2</td>
+			<td class="th">-</td>
+			<td class="th">TB2</td>
+			<td class="th">-</td>
+			<td class="slot">TA2-CSE1008-TH-315-CB-ALL</td>
+			<td class="th">-</td>
+			<td class="slot">F2-CSE3008-ETH-113-CB-ALL</td>
+			<td class="th">-</td>
+			<td class="th">TEE2</td>
+			<td class="th">-</td>
+		</tr>
 
-			<tr>
+		<tr>
+			<td class="st">LAB</td>
+			<td class="lb">L19</td>
+			<td class="lb">L20</td>
+			<td class="lb">--</td>
+			<td class="lb">L21</td>
+			<td class="lb">--</td>
+			<td class="lb">L22</td>
+			<td class="lb">--</td>
+			<td class="lb">L23</td>
+			<td class="lb">--</td>
+			<td class="lb">L24</td>
+			<td class="ln">Lunch</td>
+			<td class="lb">L49</td>
+			<td class="lb">--</td>
+			<td class="lb">L50</td>
+			<td class="lb">--</td>
+			<td class="lb">L51</td>
+			<td class="lb">--</td>
+			<td class="lb">L52</td>
+			<td class="lb">--</td>
+			<td class="lb">L53</td>
+			<td class="lb">L54</td>
+		</tr>
 
-				<td id="st">LAB</td>
-				<td id="lb">L1</td>
-				<td id="slot">L2-CSE3006-ELA-405-CB-ALL</td>
-				<td id="lb">--</td>
-				<td id="slot">L3-CSE3006-ELA-405-CB-ALL</td>
-				<td id="lb">--</td>
-				<td id="lb">L4</td>
-				<td id="lb">--</td>
-				<td id="lb">L5</td>
-				<td id="lb">--</td>
-				<td id="lb">L6</td>
-				<td id="ln">Lunch</td>
-				<td id="lb">L31</td>
-				<td id="lb">--</td>
-				<td id="lb">L32</td>
-				<td id="lb">--</td>
-				<td id="slot">L33-CSE4004-ELA-502B-CB-ALL</td>
-				<td id="lb">--</td>
-				<td id="slot">L34-CSE4004-ELA-502B-CB-ALL</td>
-				<td id="lb">--</td>
-				<td id="lb">L35</td>
-				<td id="lb">L36</td>
-			</tr>
+		<tr>
+			<td rowspan="2" class="st">SAT</td>
+			<td class="st">THEORY</td>
+			<td class="th">TDD1</td>
+			<td class="slot">E1-CSE3006-ETH-318B-CB-ALL</td>
+			<td class="th">SE2</td>
+			<td class="slot">C1-CSE4004-ETH-510-CB-AL</td>
+			<td class="th">-</td>
+			<td class="slot">TF1-F1-STS4006-TH-417-CB-ALL</td>
+			<td class="th">G1</td>
+			<td class="th">A1</td>
+			<td class="th">-</td>
+			<td class="th">-</td>
+			<td class="ln">Lunch</td>
+			<td class="th">D2</td>
+			<td class="th">-</td>
+			<td class="slot">E2-CSE4005-ETH-518-CB-ALL</td>
+			<td class="th">SD1</td>
+			<td class="slot">TAA2-CSE1008-TH-315-CB-ALL</td>
+			<td class="th">ECS</td>
+			<td class="th">TBB2</td>
+			<td class="th">CLUB</td>
+			<td class="slot">TFF2-CSE3008-ETH-113-CB-ALL</td>
+			<td class="th">-</td>
+		</tr>
 
-			<tr>
-				<td rowspan="2" id="st">WED</td>
-				<td id="st">THEORY</td>
-				<td id="th">TGG1</td>
-				<td id="th">D1</td>
-				<td id="th">-</td>
-				<td id="th">F1</td>
-				<td id="slot">F1-STS4006-TH-417-CB-ALL</td>
-				<td id="th">-</td>
-				<td id="slot">E1-CSE3006-ETH-318B-CB-ALL</td>
-				<td id="th">SC2</td>
-				<td id="th">B1</td>
-				<td id="th">-</td>
-				<td id="ln">Lunch</td>
-				<td id="th">D2</td>
-				<td id="th">TF2</td>
-				<td id="th">G2</td>
-				<td id="slot">E2-CSE4005-ETH-518-CB-ALL</td>
-				<td id="th">SC1</td>
-				<td id="th">B2</td>
-				<td id="th">TCC2</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-			</tr>
+		<tr>
+			<td class="st">LAB</td>
+			<td class="lb">L25</td>
+			<td class="lb">L26</td>
+			<td class="lb">--</td>
+			<td class="lb">L27</td>
+			<td class="lb">--</td>
+			<td class="lb">L28</td>
+			<td class="lb">--</td>
+			<td class="lb">L29</td>
+			<td class="lb">--</td>
+			<td class="lb">L30</td>
+			<td class="ln">Lunch</td>
+			<td class="lb">L55</td>
+			<td class="lb">--</td>
+			<td class="lb">L56</td>
+			<td class="lb">--</td>
+			<td class="lb">L57</td>
+			<td class="lb">--</td>
+			<td class="lb">L58</td>
+			<td class="lb">--</td>
+			<td class="lb">L59</td>
+			<td class="lb">L60</td>
+		</tr>
 
-			<tr>
-				<td id="st">LAB</td>
-				<td id="lb">L7</td>
-				<td id="lb">L8</td>
-				<td id="lb">--</td>
-				<td id="lb">L9</td>
-				<td id="lb">--</td>
-				<td id="lb">L10</td>
-				<td id="lb">--</td>
-				<td id="lb">L11</td>
-				<td id="lb">--</td>
-				<td id="lb">L12</td>
-				<td id="ln">Lunch</td>
-				<td id="slot">L37-CSE3008-ELA-405-CB-ALL</td>
-				<td id="lb">--</td>
-				<td id="slot">L38-CSE3008-ELA-405-CB-ALL</td>
-				<td id="lb">--</td>
-				<td id="lb">L39</td>
-				<td id="lb">--</td>
-				<td id="lb">L40</td>
-				<td id="lb">--</td>
-				<td id="lb">L41</td>
-				<td id="lb">L42</td>
-			</tr>
+	</table>
 
-			<tr>
-				<td rowspan="2" id="st">THU</td>
-				<td id="st">THEORY</td>
-				<td id="th">TEE1</td>
-				<td id="slot">C1-CSE4004-ETH-510-CB-AL</td>
-				<td id="th">-</td>
-				<td id="th">TD1</td>
-				<td id="th">TG1</td>
-				<td id="th">TAA1</td>
-				<td id="th">ECS</td>
-				<td id="th">TBB1</td>
-				<td id="th">CLUB</td>
-				<td id="th">-</td>
-				<td id="ln">Lunch</td>
-				<td id="slot">TE2-CSE4005-ETH-518-CB-ALL</td>
-				<td id="th">SE1</td>
-				<td id="th">C2</td>
-				<td id="slot">A2-CSE1008-TH-315-CB-ALL</td>
-				<td id="th">-</td>
-				<td id="th">TD2</td>
-				<td id="th">TG2</td>
-				<td id="th">TGG2</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-			</tr>
+</body>
 
-			<tr>
-				<td id="st">LAB</td>
-				<td id="lb">L13</td>
-				<td id="lb">L14</td>
-				<td id="lb">--</td>
-				<td id="lb">L15</td>
-				<td id="lb">--</td>
-				<td id="lb">L16</td>
-				<td id="lb">--</td>
-				<td id="lb">L17</td>
-				<td id="lb">--</td>
-				<td id="lb">L18</td>
-				<td id="ln">Lunch</td>
-				<td id="lb">L43</td>
-				<td id="lb">--</td>
-				<td id="lb">L44</td>
-				<td id="lb">--</td>
-				<td id="lb">L45</td>
-				<td id="lb">--</td>
-				<td id="lb">L46</td>
-				<td id="lb">--</td>
-				<td id="lb">L47</td>
-				<td id="lb">L48</td>
-			</tr>
-
-			<tr>
-				<td rowspan="2" id="st">FRI</td>
-				<td id="st">THEORY</td>
-				<td id="th">TCC1</td>
-				<td id="th">TB1</td>
-				<td id="th">-</td>
-				<td id="th">TA1</td>
-				<td id="slot">F1-F1-STS4006-TH-417-CB-ALL</td>
-				<td id="th">-</td>
-				<td id="slot">TE1-CSE3006-ETH-318B-CB-ALL</td>
-				<td id="th">SD2</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-				<td id="ln">Lunch</td>
-				<td id="th">C2</td>
-				<td id="th">TB2</td>
-				<td id="slot">TA2-CSE1008-TH-315-CB-ALL</td>
-				<td id="th">-</td>
-				<td id="slot">F2-CSE3008-ETH-113-CB-ALL</td>
-				<td id="th">-</td>
-				<td id="th">TEE2</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-			</tr>
-
-			<tr>
-				<td id="st">LAB</td>
-				<td id="lb">L19</td>
-				<td id="lb">L20</td>
-				<td id="lb">--</td>
-				<td id="lb">L21</td>
-				<td id="lb">--</td>
-				<td id="lb">L22</td>
-				<td id="lb">--</td>
-				<td id="lb">L23</td>
-				<td id="lb">--</td>
-				<td id="lb">L24</td>
-				<td id="ln">Lunch</td>
-				<td id="lb">L49</td>
-				<td id="lb">--</td>
-				<td id="lb">L50</td>
-				<td id="lb">--</td>
-				<td id="lb">L51</td>
-				<td id="lb">--</td>
-				<td id="lb">L52</td>
-				<td id="lb">--</td>
-				<td id="lb">L53</td>
-				<td id="lb">L54</td>
-			</tr>
-
-			<tr>
-				<td rowspan="2" id="st">SAT</td>
-				<td id="st">THEORY</td>
-				<td id="th">TDD1</td>
-				<td id="slot">E1-CSE3006-ETH-318B-CB-ALL</td>
-				<td id="th">SE2</td>
-				<td id="slot">C1-CSE4004-ETH-510-CB-AL</td>
-				<td id="th">-</td>
-				<td id="slot">TF1-F1-STS4006-TH-417-CB-ALL</td>
-				<td id="th">G1</td>
-				<td id="th">A1</td>
-				<td id="th">-</td>
-				<td id="th">-</td>
-				<td id="ln">Lunch</td>
-				<td id="th">D2</td>
-				<td id="slot">E2-CSE4005-ETH-518-CB-ALL</td>
-				<td id="th">SD1</td>
-				<td id="th">TAA2</td>
-				<td id="slot">TAA2-CSE1008-TH-315-CB-ALL</td>
-				<td id="th">ECS</td>
-				<td id="th">TBB2</td>
-				<td id="th">CLUB</td>
-				<td id="slot">TFF2-CSE3008-ETH-113-CB-ALL</td>
-				<td id="th">-</td>
-			</tr>
-
-			<tr>
-				<td id="st">LAB</td>
-				<td id="lb">L25</td>
-				<td id="lb">L26</td>
-				<td id="lb">--</td>
-				<td id="lb">L27</td>
-				<td id="lb">--</td>
-				<td id="lb">L28</td>
-				<td id="lb">--</td>
-				<td id="lb">L29</td>
-				<td id="lb">--</td>
-				<td id="lb">L30</td>
-				<td id="ln">Lunch</td>
-				<td id="lb">L55</td>
-				<td id="lb">--</td>
-				<td id="lb">L56</td>
-				<td id="lb">--</td>
-				<td id="lb">L57</td>
-				<td id="lb">--</td>
-				<td id="lb">L58</td>
-				<td id="lb">--</td>
-				<td id="lb">L59</td>
-				<td id="lb">L60</td>
-			</tr>
-
-		</table>
-
-	</body>
-	</html>
+</html>
